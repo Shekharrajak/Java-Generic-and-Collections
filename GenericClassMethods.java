@@ -4,22 +4,28 @@ public class GenericClassMethods {
 	public class StudentDAO {
 	    public void save(Student student) {
 	        // code to save student details to database
+	        System.out.println("done saved!")
+	    
 	    }
+
 	 
 	    public Student get(long id) {
 	        // code to get student details from database...
 	        // ...and return a Student object
+	    System.out.println("done get!")
 	    }
     }
  
 	 public class ProfessorDAO {
 	    public void save(Professor professor) {
 	        // code to save professor details to database
+	       System.out.println("done saved prof!")
 	    }
 	 
 	    public Professor get(long id) {
 	        // code to get professor details from database...
 	        // ...and return a Professor object
+	    	System.out.println("done get! prof")
 	    }
     }
 
@@ -51,6 +57,6 @@ public class GenericClassMethods {
 		professorDAO.save(newProfessor);
 		 
 		Professor oldProfessor = professorDAO.get(100);
-		
+
 	}	
 }
